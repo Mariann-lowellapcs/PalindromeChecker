@@ -21,7 +21,7 @@ public void setup()
 public boolean palindrome(String word)
 {
   String s = new String(word);
-  s = noSpaces(s);
+  s = Spaces(s);
   s = noPunctuation(s);
   s = characters(s); 
   if(s.equals(reverse(s)) == true) 
@@ -34,7 +34,7 @@ else
 }
 
 
-public String noSpaces(String sWord) 
+public String Spaces(String sWord) 
 { 
 String a = new String(); 
   for(int i = 0; i < sWord.length(); i++) 
@@ -76,6 +76,6 @@ public String characters(String str){
     bob=bob+str.charAt(i);
 }
   return bob;
-
 }
+
 
